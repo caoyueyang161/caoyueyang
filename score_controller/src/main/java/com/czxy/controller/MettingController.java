@@ -18,6 +18,9 @@ public class MettingController  {
     @Autowired
     private MettingService mettingService;
 
+System.out.println("111");
+    System.out.println("222");
+    System.out.println("113331");
     @GetMapping
     public ResponseEntity<List<Metting>>findAll(){
         try {
