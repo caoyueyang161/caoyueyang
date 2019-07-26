@@ -71,10 +71,15 @@ public class MettingController  {
     public ResponseEntity<Metting>findmymetting(@PathVariable("metting_id")Integer metting_id){
         try {
             Metting metting = mettingService.findmettingByid(metting_id);
+            System.out.println(111);
+            System.out.println(222);
+            System.out.println(333);
+            System.out.println(444);
             return new ResponseEntity<>(metting,HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
 }
